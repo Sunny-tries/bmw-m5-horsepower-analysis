@@ -48,14 +48,14 @@ The web scraping returned a lot of raw HTML that needed to be processed. Below a
 2. **Extract years and model names** to ensure proper matching of data.
 3. **Transform data into a DataFrame** using `pandas` to make it suitable for further processing.
 
--- 
+--- 
 ## Missing Data Handling
 During the data scraping process, I discovered that the earliest BMW M5 generations (E12 and E28) were not available on the website. To fill in the missing data:
 
 - I researched these models independently.
 - Manually added their horsepower values to the DataFrame.
 
---
+---
 
 ## Visualizations
 The cleaned data was exported to Excel, where two visualizations were created:
@@ -63,7 +63,7 @@ The cleaned data was exported to Excel, where two visualizations were created:
 - Line Chart: Showcasing the horsepower growth across different generations (from E12 to F90).
 - Bar Chart: Highlighting the change in horsepower from one generation to the next. The biggest increase was observed in the E60 model, which saw a jump of 106 hp compared to the E39.
 
---
+---
 ## Future Improvements
 - Automate data updates: Schedule periodic scrapes to update the dataset with any new models or changes.
 - Additional metrics: Include more performance data (e.g., 0-60 mph times or torque figures) for deeper insights.
